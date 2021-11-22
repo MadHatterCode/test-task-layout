@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+:root {
+  --main-dark-color: #2c3e50;
+  --main-bright-color: #27ae60;
+}
+
+body {
+  font: 400 14px/1 "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: var(--main-bright-color);
+  color: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+p,
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  color: #fff;
+}
+
+ul li:not(:first-child) {
+  margin-left: 3rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-nav {
+  background-color: var(--main-dark-color);
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.header-logo {
+  background-color: #fff;
+  color: var(--main-bright-color);
+  height: 44px;
+  width: 140px;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header-btn {
+  font-size: 15px;
+  width: 90px;
+  height: 34px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+.hero-slider {
+  height: 420px;
+  background-color: transparent;
+}
+
+.hero-image-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+.hero-image-container .hero-image {
+  opacity: 0;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1.5s ease-in;
+  height: 420px;
+}
+
+.hero-image-container .hero-image.show {
+  opacity: 1;
+}
+
+.hero-content-wrap {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.hero-content-wrap .hero-content {
+  position: absolute;
+  right: 135px;
+  top: 100px;
+  width: 355px;
+}
+
+.hero-content h1 {
+  color: var(--main-dark-color);
+  font-weight: 100;
+  margin-top: 40px;
+  font-size: 52px;
+  line-height: 60px;
+  margin-top: 0;
+  background-color: transparent;
+  text-align: center;
+  color: #555;
+}
+
+.hero-content .hero-btn {
+  height: 41px;
+  width: 80px;
+  margin-top: 38px;
+  font-size: 22px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+.hero-btn-next {
+  position: absolute;
+  top: 205px;
+  right: 20px;
+  background-color: transparent;
+}
+
+.hero-slider-progress {
+  position: absolute;
+  width: 96px;
+  display: flex;
+  top: 384px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 16px;
+  justify-content: space-between;
+}
+
+.hero-slider-progress .progress-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--main-dark-color);
+  opacity: 0.5;
+}
+
+.hero-slider-progress .progress-item.active {
+  opacity: 1;
+}
+
+.about-me {
+  margin-top: 65px;
+}
+
+.general-information {
+  max-width: 459px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.general-information h2 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+
+.contact-me {
+  height: 520px;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+}
+
+.contact-me-background {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 520px;
+}
+
+.contact-form-wrap {
+  position: relative;
+  width: 460px;
+  height: 355px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-form {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  margin-top: 28px;
+  overflow: visible;
+}
+
+.contact-form p {
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.contact-form input {
+  width: 100%;
+  height: 50px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.contact-form input::placeholder {
+  padding-left: 20px;
+  font-size: 20px;
+  color: #555;
+  font-weight: 300;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form input:last-of-type {
+  margin-bottom: 70px;
+}
+
+.dropdown {
+  width: 100%;
+  position: absolute;
+  top: 180px;
+  margin-bottom: 20px;
+}
+
+.dropdown a {
+  padding: 0 20px;
+  display: block;
+  color: #000;
+  background-color: #f5f5f5;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #555;
+  font-weight: 300;
+  line-height: 32px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a:focus,
+.dropdown a:hover {
+  background: #ecf0f1;
+}
+
+.dropdown a:active {
+  background: #fbfcfc;
+}
+
+.dropdown ul {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  height: 150px;
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.dropdown ul::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+.dropdown ul::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.dropdown ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.dropdown li {
+  cursor: pointer;
+  left: 0;
+  margin: 0;
+  width: 300px;
+  min-height: 50px;
+  margin-left: 0 !important;
+  background-color: #fff;
+  color: #555;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.dropdown li span {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.dropdown li:focus,
+.dropdown li:hover {
+  background: #ecf0f1;
+}
+.dropdown li:active {
+  background: #fbfcfc;
+}
+
+.dropdown-show {
+  display: flex;
+}
+
+.dropdown-hide {
+  display: none;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 44px;
+  width: 100%;
+  background-color: var(--main-dark-color);
+}
+
+.footer span {
+  color: #fff;
+  line-height: 32px;
+  font-size: 15px;
+  font-weight: 300;
+}

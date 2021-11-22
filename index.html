@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="header-nav">
+      <div class="container d-flex space-between items-center">
+        <div class="header-logo d-flex content-center items-center">
+          <p>layout</p>
+        </div>
+        <div class="header-links-wrap">
+          <ul class="header-links">
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </div>
+        <div class="header-btn-wrap">
+          <button class="header-btn">Enter</button>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-slider">
+      <div class="hero-image-container">
+        <img src="./assets/images/hero-image-1.png" alt="running-man-image" class="hero-image show">
+        <img src="./assets/images/hero-image-2.png" alt="man-work-img" class="hero-image">
+        <img src="./assets/images/hero-image-3.png" alt="bicycle-trick-img" class="hero-image">
+        <img src="./assets/images/hero-image-4.png" alt="gamer-moment-img" class="hero-image">
+        <img src="./assets/images/hero-image-4.png" alt="gamer-moment-img" class="hero-image">
+      </div>
+      <div class="container">
+        <div class="hero-content-wrap">
+          <div class="hero-content d-flex content-center items-center direction-column">
+            <h1>Monetize <br> your skills now!</h1>
+            <button class="hero-btn">GO!</button>
+          </div>
+          <button class="hero-btn-next"><img src="./assets/images/arrow.png" alt=""></button>
+          <div class="hero-slider-progress">
+            <div class="progress-item active"></div>
+            <div class="progress-item"></div>
+            <div class="progress-item"></div>
+            <div class="progress-item"></div>
+            <div class="progress-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="about-me d-flex space-between">
+        <div class="general-information">
+          <h2>Something about me</h2>
+          <p>In this section, you can specify any information about yourself, insert your photos, your interests and
+            skills. It is also desirable to use tag canvas.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+            labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+        <div class="picture">
+          <img src="./assets/images/main-image.png" alt="about-image">
+        </div>
+      </section>
+    </div>
+    <section class="contact-me">
+      <div>
+        <img src="./assets/images/contact-me.png" alt="contact-me-img" class="contact-me-background">
+      </div>
+      <div class="contact-form-wrap d-flex content-center">
+          <form class=" contact-form d-flex items-center direction-column">
+            <p>Register</p>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <div class="dropdown">
+              <a href="#" class="link"><span>Country</span><i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-list dropdown-hide">
+                <li><span>Country 1</span></li>
+                <li><span>Country 2</span></li>
+                <li><span>Country 3</span></li>
+              </ul>
+            </div>
+            <button class="header-btn">Enter</button>
+          </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer d-flex items-center content-center"><span>© 2015 layout</span></footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
